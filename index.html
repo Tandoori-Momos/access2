@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/kij8hel.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" charset="utf-8"></script>
+    <link href="fonts/proxima nova/fonts/fonts.css" rel="stylesheet">
+
+    <title></title>
+  </head>
+  <body>
+  <div class="main">
+    <div class="ober"></div>
+    <div class="popup">
+      <div class="head-d" style="display: none;">How does it work?</div>
+      <div class="txt-d" style="display: none;">
+          Hyperloop is a new mode of transportation that moves <br>freight and people quickly, safely, on-demand and direct <br>from origin to destination. Passengers or cargo are load <br> into the Hyperloop vehicle and accelerate gradually via<br> electric propulsion through a low-pressure tube.<br>
+
+          <div style="margin-top: 10px;">The vehicle floats above the track using magnetic levitation <br>and glides at airline speeds for long distances due to ultra<br>low aerodynamic drag. Hyperloop One systems will be built<br> on columns or tunneled below ground to avoid dangerous<br> grade crossings and wildlife. <br>
+        </div>
+      </div>
+
+      <div class="head-a" style="display: none;">How we built it?</div>
+      <div class="txt-a" style="display: none;">
+          Hyperloop is a new mode of transportation that moves <br>freight and people quickly, safely, on-demand and direct <br>from origin to destination. Passengers or cargo are load <br> into the Hyperloop vehicle and accelerate gradually via<br> electric propulsion through a low-pressure tube.<br>
+
+          <div style="margin-top: 10px;">The vehicle floats above the track using magnetic levitation <br>and glides at airline speeds for long distances due to ultra<br>low aerodynamic drag. Hyperloop One systems will be built<br> on columns or tunneled below ground to avoid dangerous<br> grade crossings and wildlife. <br>
+         </div>
+      </div>
+
+            <div class="head-b" style="display: none;">Introducing the Xp-1</div>
+            <div class="txt-b" style="display: none;">
+                Hyperloop is a new mode of transportation that moves <br>freight and people quickly, safely, on-demand and direct <br>from origin to destination. Passengers or cargo are load <br> into the Hyperloop vehicle and accelerate gradually via<br> electric propulsion through a low-pressure tube.<br>
+
+                <div style="margin-top: 10px;">The vehicle floats above the track using magnetic levitation <br>and glides at airline speeds for long distances due to ultra<br>low aerodynamic drag. Hyperloop One systems will be built<br> on columns or tunneled below ground to avoid dangerous<br> grade crossings and wildlife. <br>
+               </div>
+            </div>
+            <div class="head-c" style="display: none;">What makes xp-1 special?</div>
+            <div class="txt-c" style="display: none;">
+                Hyperloop is a new mode of transportation that moves <br>freight and people quickly, safely, on-demand and direct <br>from origin to destination. Passengers or cargo are load <br> into the Hyperloop vehicle and accelerate gradually via<br> electric propulsion through a low-pressure tube.<br>
+
+                <div style="margin-top: 10px;">The vehicle floats above the track using magnetic levitation <br>and glides at airline speeds for long distances due to ultra<br>low aerodynamic drag. Hyperloop One systems will be built<br> on columns or tunneled below ground to avoid dangerous<br> grade crossings and wildlife. <br>
+                </div>
+            </div>
+    </div>
+    <div class="over"></div>
+    <div class="header">
+      <div class="logo">Hyperloop</div>
+
+      <div class="nab"><span class = 'n1'>About</span> <span class = 'n2'>design</span> <button>CAREERS</button></div>
+    </div>
+
+    <div class="tp">
+      <div class="h">HyperLoop makes travelling easier.</div>
+      <button>The XP-1 Pod</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button>how it works</button>
+    </div>
+
+    <div class="tm" style="text-transform: uppercase; font-size: 16px; letter-spacing: 2px;">Working for a better future.<br></span></div>
+  </div>
+
+  <div class="sec1">
+    <div class="disp">
+
+      <div class="vid">
+            <div class="over2"></div>
+        <video id = "vid2" src="assets/dis1.mp4" autoplay muted loop></video>
+      </div>
+      <div class="tp" style="color: #000;">
+        <div class="dh">the hyperloop aeroshell (xp-1)</div>
+        <div class="dsc"><div class="ds db">VIEW DETAILS</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="ds dc">HOW IT WORKS</div></div>
+      </div>
+    </div>
+  </div>
+    <div class="sec2">
+      <div class="disp">
+        <div class="vid">
+              <div class="over2"></div>
+          <video id = "vid1" src="assets/dis2.mp4" autoplay muted loop></video>
+        </div>
+
+        <div class="tp" style="color: #000;">
+          <div class="dh">THE DESIGN OF THE HYPERLOOP</div>
+              <div class="dsc"><div class="ds dd">VIEW DETAILS</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="ds da">OUR DESIGN </div></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+$(document).ready( function () {
+  $('.dd').click( function() {
+    $('.popup').fadeIn();
+        $('.ober').fadeIn();
+        $('.txt-d, .head-d').fadeIn();
+  });
+  $('.da').click( function() {
+    $('.popup').fadeIn();
+        $('.ober').fadeIn();
+        $('.txt-a, .head-a').fadeIn();
+  });
+  $('.db').click( function() {
+    $('.popup').fadeIn();
+        $('.ober').fadeIn();
+        $('.txt-b, .head-b').fadeIn();
+  });
+  $('.dc').click( function() {
+    $('.popup').fadeIn();
+        $('.ober').fadeIn();
+        $('.txt-c, .head-c').fadeIn();
+  });
+  $('.ober').click( function() {
+    $('.popup').fadeOut();
+        $('.ober').fadeOut();
+        $('.txt-d, .head-d,.txt-a, .head-a, .txt-b, .head-b, .txt-c, .head-c').fadeOut();
+  });
+});
+
+
+
+$(document).ready(function() {
+  $('.n1, button').click( function() {
+    $('html,body').animate({
+      scrollTop: $('.sec1').offset().top
+    }, 1000);
+  });
+
+  $('.n2').click( function() {
+    $('html,body').animate({
+      scrollTop: $('.sec2').offset().top
+    }, 1000);
+  });
+});
+</script>
